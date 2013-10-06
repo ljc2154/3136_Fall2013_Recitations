@@ -1,6 +1,6 @@
-## Pointers ##
+# Pointers on Pointers on Pointers #
 
-### What's a pointer anyway? ###
+## What's a pointer anyway? ##
 
 A pointer is a data type whose value is an address in memory.  The value "points" to another value stored in that memory location.
 
@@ -26,7 +26,7 @@ To access the address of a variable, we use an &.
 ```    
 This tells y to point to the address of the int x.
 
-### I still don't get it ###
+## I still don't get it ##
 
 Legendary Professor Alfred Aho once compared data types to people and pointers to where they live. Hopefully the analogy will make pointers easier to understand for you as well!
 
@@ -94,12 +94,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## Pointers on Pointers on Pointers ##
-
-### What's a pointer again? ###
-A pointer is a data type whose value is an address in memory. The value "points" to another value stored in that memory location.
-
-### NULL Pointer ###
+## NULL Pointer ##
 A NULL pointer holds the memory address 0.
 
 It cannot be dereferenced.
@@ -114,7 +109,7 @@ It can be initialized with `NULL` or `0` as done in the below example.
     printf("p is a NULL pointer.\n");
 ```
 
-### Simulating call-by-reference ###
+## Simulating call-by-reference ##
 When you pass a parameter into a function by value, any changes made to the parameter inside the body of the function do not affect the parameter outside the scope of the function.
 
 To address this, C++ has a "call-by-reference" where the changes made to a parameter hold after the function's execution.
@@ -158,7 +153,7 @@ void doubleItP(int *a)
 }
 ```
 
-### sizeof() and pointers ###
+## sizeof() and pointers ##
 `sizeof()` is a built-in function in c that returns the size of a given variable or type in bytes as a long unsigned integer.
 
 The size of a `char` is 1 byte.
@@ -186,7 +181,7 @@ int main(int argc, char **argv)
 }
 ```
 
-### Arrays and Pointers ###
+## Arrays and Pointers ##
 An array is pretty much a glorified pointer.  You can do very similar things with both of them.
 
 In the following example, we move pointers around the array to access elements.

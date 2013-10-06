@@ -26,7 +26,7 @@ To access the address of a variable, we use an &.
 ```    
 This tells y to point to the address of the int x.
 
-## I still don't get it ##
+### I still don't get it ###
 
 Legendary Professor Alfred Aho once compared data types to people and pointers to where they live. Hopefully the analogy will make pointers easier to understand for you as well!
 

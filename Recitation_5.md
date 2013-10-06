@@ -245,3 +245,50 @@ int strncmp(const char *s1, const char *s2, int n)
   	return 0;
 }
 ```
+
+## Malloc ##
+Sometimes you want a bit more than a local variable, but less than a static variable.  
+Sometimes, you want a dynamic AND persistant array.  Who you gonna call? -> Heap allocation.
+How you gonna call it? -> with malloc().
+A variable allocated on the heap will stay there until free() is called.  Wow!
+Example:
+```c
+#include <stdio.h> // look!  a new library for malloc and free!
+#include <stdlib.h>
+
+int *allocateIntArray()
+{
+  int *p = (int *)malloc(3 * sizeof(int));
+  return p;
+}
+
+void callNumber(int *p, int n)
+{
+  printf("Calling ");
+  int i;
+  for (i = 0; i < 3; i++)
+  {
+    printf("%d", *(p + i));
+  }
+  printf("\n");
+}
+
+void freeIntArray(int *p)
+{
+  free(p);
+}
+
+int main(int argc, char **argv)
+{
+  int *emergency = allocateIntArray();
+  *(emergency) = 9;
+  *(emergency + 1) = 1;
+  *(emergency + 2) = 1;
+  callNumber(emergency, 3);
+  freeIntArray(emergency);
+  return 0;
+}
+```
+### Memory Leaks ###
+When you run valgrind on your programs, you will have memory errors if you allocated memory on the heap that wasn't freed.
+Don't forget to free()!  Memory errors will lose you points on labs!

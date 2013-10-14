@@ -1,4 +1,4 @@
-# Pointers on Pointers on Pointers #
+# Recitation 5: Pointers on Pointers on Pointers #
 
 ## What's a pointer anyway? ##
 

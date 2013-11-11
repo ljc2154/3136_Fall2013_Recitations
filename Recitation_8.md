@@ -29,6 +29,9 @@ typedef struct {
   int len;
 } String;
 
+/* Note: here allocString() would take in a string literal,
+ * allocate memory on the heap for a String, set s to "hello",
+ * and length to strlen("hello") */
 String *buf = allocString("hello");
 ```
 #### What we want: ####

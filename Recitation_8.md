@@ -118,10 +118,10 @@ Our MyString class has two private variables: char *data and int len.
 Initialize all variables of class.  No return type.  Can take any number of arguments to initialize the variables.
 ```c
 // In mystring.h:
-        // default constructor.  Has no arguments.
-        MyString();
-        // constructor 1.  Takes in a char * to be assigned to data
-        MyString(const char* p);
+  // default constructor.  Has no arguments.
+  MyString();
+  // constructor 1.  Takes in a char * to be assigned to data
+  MyString(const char* p);
         
 // In mystring.cpp
   // default constructor.  Allocate memory for empty string (just '\0' char).

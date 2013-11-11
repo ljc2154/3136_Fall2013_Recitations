@@ -44,7 +44,7 @@ String s = "hello";
 #### Declaration vs. Definition ####
 A declaration tells the compiler the name and type/return type of a variable/function/class
 which is defined somewhere else.  For our purposes, the definition could be somewhere else in 
-the same file or in a .h (header) file of the same name.
+the same file or in a .c file of the same name.
 
 i.e. 
 ```c

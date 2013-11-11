@@ -43,16 +43,20 @@ String s = "hello";
 ### Review ###
 #### Declaration vs. Definition ####
 A declaration tells the compiler the name and type/return type of a variable/function/class
-which is defined somewhere else.  For our purposes, the definition could be somewhere else in 
-the same file or in a .c file of the same name.
+which is defined somewhere else.
+Header files in C/C++ contain many declarations (.h files).
+In a program file, global variables/functions/classes can be declared above the
+program's main function.
 
 i.e. 
 ```c
 void swap(int *a, int *b);
 ```
 
-The definition defines. Simple as that.  Defining could happen in the assignment of a variable or
+The definition defines. Defining could happen in the assignment of a variable or
 in the associated body of a function, struct, or class.
+For our purposes, the definition could be somewhere else in 
+the same file or in a .c file of the same name.
 
 i.e. 
 ```c
